@@ -2,6 +2,7 @@
 package ejercicioencasa;
 
 import java.util.Scanner;
+import javax.swing.JOptionPane;
 
 
 public class EjercicioEncasa {
@@ -16,18 +17,16 @@ public class EjercicioEncasa {
       a = new int [10];
       b = new int [10];
       c = new int [20];
-      
-      System.out.println("Digite el primer arreglo: ");
+     
         for (int i=0; i<10; i++){
-           System.out.println((i+1)+". Digite un numero: ");
+           System.out.print((i+1)+". Digite un numero: ");
            a[i] = entrada.nextInt();
         }
-      System.out.println("Digite el segundo arreglo: ");
         for (int i=0; i<10; i++){
            System.out.println((i+1)+". Digite un numero: ");
            b[i] = entrada.nextInt();
-        }  
-        int j=0;
+        }
+      int j=0;
         for (int i=0; i<10; i++){
          c[j] = a [i];
          j++;
@@ -40,6 +39,7 @@ public class EjercicioEncasa {
            System.out.print(c[i]+ " "); 
         }
         System.out.println();
+        
     }
     
 }
